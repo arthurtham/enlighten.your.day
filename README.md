@@ -1,6 +1,9 @@
 # enlighten.your.day
 Enlighten Your Day with a collection of inspirational quotes from ten distinct categories.
 
+## Installation and testing
+Download the "dev" folder to your Desktop. Then, go to Settings->Extensions and [Load unpacked extension]. Select the folder to import it. Try it immediately my making a new tab!
+
 ## Inspiration
 Our Chrome extension was inspired by the Currently extension and how the latter displayed information, like the time of the day, when a new tab was opened. We wanted to create an extension that shows information about random things based on categories. We saw that the quirky quotes from Wikiquotes can be a pleasant read and aesthetic on our user’s screen, and decided to start our project under the name “enlighten.your.day”.
 
