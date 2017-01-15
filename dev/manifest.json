@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "enlighten.your.day",
+  "description": "This extension provides random facts about a user-chosen topic.",
+  "version": "1.0",
+  "content_security_policy": "script-src 'self' https://en.wikiquote.org;",
+
+
+"browser_action": {
+	"default_icon": "icon.png",
+	"default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+	"storage"
+	
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "landing.html"
+  }
+}

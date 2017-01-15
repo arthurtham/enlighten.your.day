@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>enlighten.your.day</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+</head>
+
+<style>
+    h4,h5,h6 {font-family: 'Bad Script', cursive !important}
+    body,h1,h2 {font-family: 'Fira Sans Extra Condensed', sans-serif !important}
+    body, html {height: 100%}
+    .bgimg {
+        background-color:black;
+        min-height: 100%;
+        background-position: center;
+		background-size: cover;
+	}
+
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s
+	}
+
+	.sidenav a:hover, .offcanvas a:focus{
+		color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-right: 0px;
+	}
+
+	#main {
+		transition: margin-right .5s;
+		padding: 16px;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+	
+	button.accordion {
+		background-color: none;
+		color: none;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+	}
+
+	button.accordion.active, button.accordion:hover {
+		background-color: none; 
+	}
+
+	div.panel {
+		padding: 0 18px;
+		display: none;
+		background-color: none;
+	}
+
+	button.colors {
+		display:block;
+		width:100% !important;
+		height:50px;
+		border: none;
+
+	}
+
+	table.colortable {
+		padding: 0px;
+		border: none;
+		width:100% !important;
+	}
+	tr {
+		width:100% !important;
+	}
+	td {
+		width:33% !important;
+	}
+	a.table{
+		padding:0px;
+	}
+
+
+
+</style>
+
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="index.js"></script>
+<script src="nav.js"></script>
+<script src="acc.js"></script>
+
+
+<body>
+  
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" id="closeNav()">&times;</a>
+	<span id="accord()">
+	  <a href="#">
+			<div class="accordion">Colors</div>
+			<div class="panel">
+
+				<table class="colortable">
+					<tr>
+						<td><a class="table" href="savecolor.html?color=0"><button class="colors" style="background-color:darkred;"></button></a></td>
+						<td><a class="table" href="savecolor.html?color=1"><button class="colors" style="background-color:#5cbf94;"></button></a></td>
+						<td><a class="table" href="savecolor.html?color=2"><button class="colors" style="background-color:#b77373"></button></a></td>
+					</tr>
+					<tr>
+						<td><a class="table" href="savecolor.html?color=3"><button class="colors" style="background-color:#84c0d7"></button></a></td>
+						<td><a class="table" href="savecolor.html?color=4"><button class="colors" style="background-color:black;"></button></a></td>
+						<td><a class="table" href="savecolor.html?color=5"><button class="colors" style="background-color:cornflowerblue;"></button></a></td>
+					</tr>
+					<tr>
+						<td><a class="table" href="savecolor.html?color=6"><button class="colors" style="background-color:rebeccapurple;"></button></a></td>
+						<td><a class="table" href="savecolor.html?color=7"><button class="colors" style="background-color:darkgray;"></button></a></td>
+						<td><a class="table" href="savecolor.html?color=8"><button class="colors" style="background-color:#5c2533;"></button></a></td>
+						</tr>
+				<!--<tr><button class="colors" style="background-color:#84c0d7"></button>
+				<button class="colors" style="background-color:#5c2533"></button></tr>-->
+				</table>
+
+			</div>
+	  </a>
+	  <a href="#">
+			<div class="accordion">Credits</div>
+			<div class="panel"><div style="font-size:15px">Arthur Tham<br>
+			Ami Patel<br>
+			My Lynn Huynh<br>
+			Jessica Wong<br><br>
+			HackUCI<br>
+			Powered by w3.css<br>
+			Wikiquotes API courtesy of:<br>&emsp;Nate Tyler<br>
+			Data from Wikiquotes
+			</div></div>
+	  </a>
+	</span>
+</div>
+
+<div id="bgimg" class="bgimg w3-display-container w3-animate-opacity w3-text-white" >
+    <div class="w3-display-topleft w3-padding-large w3-xlarge"><h6>
+        enlighten.your.day
+    </h6></div>
+	
+	<div id="main" align="right">
+	<span style="font-size:30px;cursor:pointer;" id="openNav()">&#9776;</span>
+	</div>
+	
+    <div class="w3-display-middle" style="width:80%">
+        <center>
+        <h1 class="w3-large w3-animate-top" style="font-size: 10vmin !important">ENLIGHTEN YOUR DAY WITH ...</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <p class="w3-large w3-center">
+
+            <form action="results.html">
+                <select name="category">
+                    <option value="0" disabled>Select an option...</option>
+                    <option value="1">Comedy</option>
+					<option value="2">Dance</option>
+					<option value="3">Film</option>
+					<option value="4">Geography</option>
+					<option value="5">Motivation</option>
+					<option value="6">Music</option>
+					<option value="7">Nature</option>
+					<option value="8">People</option>
+					<option value="9">Society</option>
+					<option value="10">Sports</option>
+					
+                </select>
+                <button type="submit"  >Search</button>
+
+                <br />
+            <!--<p><small>Press the enter key to search</small></p>-->
+
+            </form>
+        </center>
+        </p>
+    </div>
+</div>
+
+
+
+<script src="loadcolor.js"></script>
+
+</body>
+</html>
