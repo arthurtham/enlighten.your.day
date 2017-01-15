@@ -26,3 +26,14 @@ We also learned how to write code according to specifications other than our own
 ## What's next for enlighten.your.day
 Possible improvements include finding a new API to include authors for the quotes that are provided, providing images as possible background selections, and improving the rate at which quotes are spawned. While the speed at which quotes appeared was fast, it was sometimes inconsistent. Our next update will aim to improve this. 
 
+##Created for HackUCI 2017
+Arthur Tham
+Ami Patel
+My Lynn Huynh
+Jessica Wong
+
+Powered by w3.css
+Wikiquotes API courtesy of: Nate Tyler
+Data from Wikiquotes
+
+
